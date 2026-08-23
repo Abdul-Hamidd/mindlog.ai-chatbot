@@ -396,7 +396,7 @@ function MicButton({
         ${
           isListening
             ? 'bg-red-500/20 text-red-600 scale-105'
-            : 'text-slate-500 hover:text-slate-800 hover:bg-slate-200/60'
+            : 'text-green-600 hover:text-green-800 hover:bg-green-100/60'
         }
         ${className}
       `}
@@ -1281,7 +1281,7 @@ function App() {
           ? `${appHeight}px`
           : '100vh'
       }}
-      className="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 flex font-sans overflow-hidden text-slate-800"
+      className="bg-gradient-to-br from-green-100 via-emerald-100 to-teal-100 flex font-sans overflow-hidden text-slate-800"
     >
 
       {/* MOBILE BACKDROP */}
@@ -1308,9 +1308,9 @@ function App() {
         className={`
           fixed inset-y-0 left-0 z-40
           w-[290px]
-          bg-slate-900 text-slate-100
+          bg-green-950 text-green-50
           flex flex-col
-          shadow-2xl border-r border-slate-800
+          shadow-2xl border-r border-green-900
           overflow-hidden
           transition-all duration-300 ease-in-out
           md:sticky md:top-0 md:h-screen
@@ -1328,16 +1328,16 @@ function App() {
           <div className="px-6 pt-6 pb-4">
             <div className="flex items-center">
               <div className="flex items-center gap-2.5">
-                <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center shadow-lg shadow-indigo-500/30">
+                <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-green-400 via-emerald-500 to-teal-500 flex items-center justify-center shadow-lg shadow-green-500/30">
                   <IconCompass className="w-5 h-5 text-white" />
                 </div>
 
                 <div>
-                  <h1 className="font-bold text-2xl tracking-tight leading-none bg-gradient-to-r from-indigo-200 via-pink-200 to-white bg-clip-text text-transparent">
+                  <h1 className="font-bold text-2xl tracking-tight leading-none bg-gradient-to-r from-green-200 via-lime-200 to-white bg-clip-text text-transparent">
                     MindLog
                   </h1>
 
-                  <p className="text-[10px] text-indigo-300/60 mt-1 uppercase tracking-[0.2em] font-semibold">
+                  <p className="text-[10px] text-green-300/60 mt-1 uppercase tracking-[0.2em] font-semibold">
                     UK Modern Suite
                   </p>
                 </div>
@@ -1351,7 +1351,7 @@ function App() {
               onClick={
                 startNewReflection
               }
-              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:from-indigo-500 hover:to-pink-500 text-white rounded-xl py-3 text-sm font-bold shadow-lg shadow-indigo-500/25 transition-all transform active:scale-[0.98]"
+              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 hover:from-green-500 hover:to-teal-500 text-white rounded-xl py-3 text-sm font-bold shadow-lg shadow-green-500/25 transition-all transform active:scale-[0.98]"
             >
               <IconPlus className="w-4 h-4 stroke-[2.5]" />
               New reflection
@@ -1360,11 +1360,11 @@ function App() {
 
           {/* CONVERSATIONS TITLE */}
           <div className="px-6 pb-2 flex items-center justify-between">
-            <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400 font-bold">
+            <p className="text-[10px] uppercase tracking-[0.18em] text-green-400 font-bold">
               Your reflections
             </p>
 
-            <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-800 text-indigo-300">
+            <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-green-900 text-green-300">
               {conversations.length}
             </span>
           </div>
@@ -1374,11 +1374,11 @@ function App() {
             {conversations.length ===
               0 && (
               <div className="text-center mt-8 px-5">
-                <div className="w-12 h-12 mx-auto rounded-2xl bg-slate-800/80 flex items-center justify-center mb-3 text-indigo-400">
+                <div className="w-12 h-12 mx-auto rounded-2xl bg-green-900/80 flex items-center justify-center mb-3 text-green-400">
                   <IconMessage className="w-6 h-6" />
                 </div>
 
-                <p className="text-xs text-slate-400 leading-relaxed">
+                <p className="text-xs text-green-400 leading-relaxed">
                   Your reflections will appear here.
                 </p>
               </div>
@@ -1407,13 +1407,13 @@ function App() {
                         transition-all duration-200
                         ${
                           isActive
-                            ? 'bg-gradient-to-r from-indigo-900/60 to-purple-900/40 text-white border border-indigo-500/30'
-                            : 'hover:bg-slate-800/60 text-slate-300'
+                            ? 'bg-gradient-to-r from-green-900/60 to-teal-900/40 text-white border border-green-500/30'
+                            : 'hover:bg-green-900/60 text-green-300'
                         }
                       `}
                     >
                       {isActive && (
-                        <span className="absolute left-0 top-2 bottom-2 w-1 rounded-r-full bg-gradient-to-b from-indigo-400 to-pink-500" />
+                        <span className="absolute left-0 top-2 bottom-2 w-1 rounded-r-full bg-gradient-to-b from-green-400 to-lime-500" />
                       )}
 
                       <div
@@ -1422,8 +1422,8 @@ function App() {
                           justify-center shrink-0
                           ${
                             isActive
-                              ? 'bg-gradient-to-br from-indigo-500 to-pink-500 text-white shadow-md'
-                              : 'bg-slate-800 text-slate-400'
+                              ? 'bg-gradient-to-br from-green-500 to-teal-500 text-white shadow-md'
+                              : 'bg-green-900 text-green-400'
                           }
                         `}
                       >
@@ -1437,7 +1437,7 @@ function App() {
                             ${
                               isActive
                                 ? 'text-white font-semibold'
-                                : 'text-slate-300'
+                                : 'text-green-300'
                             }
                           `}
                         >
@@ -1446,7 +1446,7 @@ function App() {
                           }
                         </p>
 
-                        <p className="text-[10px] text-slate-500 mt-0.5">
+                        <p className="text-[10px] text-green-500 mt-0.5">
                           {timeAgo(
                             conv.created_at
                           )}
@@ -1462,7 +1462,7 @@ function App() {
                             e
                           )
                         }
-                        className="opacity-0 group-hover:opacity-100 p-1.5 rounded-lg text-slate-400 hover:text-red-400 hover:bg-red-500/10 transition-all"
+                        className="opacity-0 group-hover:opacity-100 p-1.5 rounded-lg text-green-400 hover:text-red-400 hover:bg-red-500/10 transition-all"
                         title="Delete reflection"
                       >
                         <IconTrash className="w-3.5 h-3.5" />
@@ -1475,13 +1475,13 @@ function App() {
           </div>
 
           {/* SIDEBAR FOOTER */}
-          <div className="px-5 py-4 border-t border-slate-800/80 bg-slate-950/40">
+          <div className="px-5 py-4 border-t border-green-900/80 bg-green-950/40">
             <div className="flex items-start gap-3">
-              <div className="mt-0.5 w-7 h-7 rounded-xl bg-gradient-to-tr from-pink-500 to-rose-500 flex items-center justify-center shrink-0 shadow-md">
+              <div className="mt-0.5 w-7 h-7 rounded-xl bg-gradient-to-tr from-lime-500 to-green-500 flex items-center justify-center shrink-0 shadow-md">
                 <IconHeart className="w-4 h-4 text-white" />
               </div>
 
-              <p className="text-[11px] text-slate-400 leading-relaxed">
+              <p className="text-[11px] text-green-300 leading-relaxed">
                 Your journal stays focused on your own words and reflections.
               </p>
             </div>
@@ -1493,7 +1493,7 @@ function App() {
       <main className="flex-1 flex flex-col h-full min-w-0 transition-all duration-300">
 
         {/* TOP HEADER */}
-        <header className="flex items-center justify-between gap-3 px-4 sm:px-6 lg:px-8 py-3 border-b border-indigo-100/80 shrink-0 bg-white/80 backdrop-blur-xl shadow-sm">
+        <header className="flex items-center justify-between gap-3 px-4 sm:px-6 lg:px-8 py-3 border-b border-green-200/80 shrink-0 bg-emerald-50/80 backdrop-blur-xl shadow-sm">
 
           <div className="flex items-center gap-3 sm:gap-4 min-w-0">
 
@@ -1502,7 +1502,7 @@ function App() {
               onClick={
                 toggleSidebar
               }
-              className="p-2 rounded-xl text-slate-600 hover:text-indigo-600 hover:bg-indigo-50 transition shrink-0"
+              className="p-2 rounded-xl text-slate-600 hover:text-green-600 hover:bg-green-50 transition shrink-0"
               title={
                 sidebarOpen
                   ? 'Close sidebar'
@@ -1517,10 +1517,10 @@ function App() {
               <IconMenu className="w-5 h-5" />
             </button>
 
-            <div className="w-px h-6 bg-slate-200 hidden sm:block" />
+            <div className="w-px h-6 bg-green-200 hidden sm:block" />
 
             {/* ENTRIES / REFLECT */}
-            <div className="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200/80 shadow-inner">
+            <div className="flex items-center bg-green-50 p-1 rounded-xl border border-green-200/80 shadow-inner">
 
               <button
                 onClick={() =>
@@ -1536,7 +1536,7 @@ function App() {
                   ${
                     activeTab ===
                     'write'
-                      ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md'
+                      ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-md'
                       : 'text-slate-600 hover:text-slate-900'
                   }
                 `}
@@ -1559,7 +1559,7 @@ function App() {
                   ${
                     activeTab ===
                     'reflect'
-                      ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-md'
+                      ? 'bg-gradient-to-r from-teal-600 to-lime-600 text-white shadow-md'
                       : 'text-slate-600 hover:text-slate-900'
                   }
                 `}
@@ -1571,8 +1571,8 @@ function App() {
           </div>
 
           {/* ENTRY COUNT */}
-          <div className="flex items-center gap-2 text-xs font-bold text-indigo-700 bg-indigo-50 border border-indigo-200/60 px-3 py-1.5 rounded-xl shadow-sm shrink-0">
-            <IconBook className="w-4 h-4 text-indigo-600" />
+          <div className="flex items-center gap-2 text-xs font-bold text-green-700 bg-green-50 border border-green-200/60 px-3 py-1.5 rounded-xl shadow-sm shrink-0">
+            <IconBook className="w-4 h-4 text-green-600" />
 
             <span>
               {entryCount}{' '}
@@ -1608,17 +1608,17 @@ function App() {
             {/* ================= ENTRIES ================= */}
             {activeTab ===
               'write' && (
-              <section className="bg-white/90 backdrop-blur-md border border-indigo-100 rounded-3xl shadow-xl shadow-indigo-500/5 overflow-hidden transition-all my-auto">
+              <section className="bg-emerald-50/90 backdrop-blur-md border border-green-200 rounded-3xl shadow-xl shadow-green-500/5 overflow-hidden transition-all my-auto">
 
                 <div className="p-5 sm:p-7 pb-3">
                   <div className="flex items-start gap-4">
 
-                    <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center shrink-0 shadow-lg shadow-indigo-500/25">
+                    <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-green-500 via-emerald-500 to-teal-500 flex items-center justify-center shrink-0 shadow-lg shadow-green-500/25">
                       <IconSparkles className="w-6 h-6 text-white" />
                     </div>
 
                     <div>
-                      <p className="text-[11px] uppercase tracking-[0.2em] font-bold text-indigo-600 mb-1">
+                      <p className="text-[11px] uppercase tracking-[0.2em] font-bold text-green-600 mb-1">
                         Daily reflection
                       </p>
 
@@ -1708,7 +1708,7 @@ function App() {
                       }
                       placeholder="Write whatever is on your mind..."
                       rows={4}
-                      className="w-full resize-y bg-slate-50/80 border-2 border-indigo-100 rounded-2xl pl-4 pr-14 py-3.5 text-[15px] text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-indigo-500 focus:bg-white focus:ring-4 focus:ring-indigo-500/10 transition-all leading-relaxed min-h-[110px] max-h-[220px] shadow-inner font-medium"
+                      className="w-full resize-y bg-green-50/80 border-2 border-green-100 rounded-2xl pl-4 pr-14 py-3.5 text-[15px] text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-green-500 focus:bg-white focus:ring-4 focus:ring-green-500/10 transition-all leading-relaxed min-h-[110px] max-h-[220px] shadow-inner font-medium"
                     />
 
                     {/* MIC */}
@@ -1725,7 +1725,7 @@ function App() {
                             entryText
                           )
                         }
-                        className="bg-white border border-slate-200 shadow-md hover:bg-slate-50 text-indigo-600"
+                        className="bg-white border border-green-200 shadow-md hover:bg-green-50 text-green-600"
                       />
                     </div>
                   </div>
@@ -1760,7 +1760,7 @@ function App() {
                       isSavingEntry ||
                       !entryText.trim()
                     }
-                    className="w-full sm:w-auto flex items-center justify-center gap-2 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:from-indigo-500 hover:to-pink-500 text-white px-7 py-3 rounded-xl text-sm font-bold disabled:opacity-40 disabled:cursor-not-allowed transition-all active:scale-[0.98] shadow-lg shadow-indigo-500/25"
+                    className="w-full sm:w-auto flex items-center justify-center gap-2 bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 hover:from-green-500 hover:to-teal-500 text-white px-7 py-3 rounded-xl text-sm font-bold disabled:opacity-40 disabled:cursor-not-allowed transition-all active:scale-[0.98] shadow-lg shadow-green-500/25"
                   >
                     {isSavingEntry ? (
                       <>
@@ -1779,7 +1779,7 @@ function App() {
                 {/* RECENT */}
                 {recentEntries.length >
                   0 && (
-                  <div className="px-5 sm:px-7 pb-4 pt-2 border-t border-slate-100">
+                  <div className="px-5 sm:px-7 pb-4 pt-2 border-t border-green-100">
 
                     <p className="text-[11px] uppercase tracking-wider font-bold text-slate-400 mb-2">
                       Saved recently
@@ -1800,7 +1800,7 @@ function App() {
 
                           const moodColor =
                             mood?.color ||
-                            '#6366F1'
+                            '#10B981'
 
                           return (
                             <span
@@ -1831,7 +1831,7 @@ function App() {
                   </div>
                 )}
 
-                <div className="px-5 sm:px-7 pb-5 text-center bg-slate-50/50 pt-3 border-t border-slate-100">
+                <div className="px-5 sm:px-7 pb-5 text-center bg-green-50/50 pt-3 border-t border-green-100">
                   <p className="text-[11px] font-medium text-slate-400 leading-relaxed">
                     🔒 Your reflection is your private space. MindLog is designed for reflection, not therapy.
                   </p>
@@ -1842,7 +1842,7 @@ function App() {
             {/* ================= REFLECT ================= */}
             {activeTab ===
               'reflect' && (
-              <section className="bg-white/90 backdrop-blur-md border border-indigo-100 rounded-3xl shadow-xl shadow-indigo-500/5 overflow-hidden flex-1 min-h-0 flex flex-col">
+              <section className="bg-emerald-50/90 backdrop-blur-md border border-green-200 rounded-3xl shadow-xl shadow-green-500/5 overflow-hidden flex-1 min-h-0 flex flex-col">
 
                 <div
                   className={
@@ -1855,7 +1855,7 @@ function App() {
                   {/* LOADING */}
                   {isLoadingConvo && (
                     <div className="flex flex-col items-center justify-center text-center">
-                      <div className="w-12 h-12 rounded-full border-4 border-indigo-200 border-t-indigo-600 animate-spin mb-3 shadow-md" />
+                      <div className="w-12 h-12 rounded-full border-4 border-green-200 border-t-green-600 animate-spin mb-3 shadow-md" />
 
                       <p className="text-sm font-semibold text-slate-600">
                         Opening your reflection...
@@ -1869,12 +1869,12 @@ function App() {
                       0 && (
                     <div className="w-full flex flex-col items-center text-center py-4">
 
-                      <div className="relative w-16 h-16 rounded-3xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center shadow-xl shadow-indigo-500/30 mb-4">
+                      <div className="relative w-16 h-16 rounded-3xl bg-gradient-to-tr from-green-500 via-emerald-500 to-teal-500 flex items-center justify-center shadow-xl shadow-green-500/30 mb-4">
                         <IconSparkles className="w-8 h-8 text-white" />
                         <span className="absolute -right-1 -top-1 w-5 h-5 rounded-full bg-amber-400 border-2 border-white shadow-sm" />
                       </div>
 
-                      <p className="text-[11px] uppercase tracking-[0.2em] font-bold text-indigo-600 mb-1.5">
+                      <p className="text-[11px] uppercase tracking-[0.2em] font-bold text-green-600 mb-1.5">
                         Your personal reflection
                       </p>
 
@@ -1911,7 +1911,7 @@ function App() {
                                       question
                                     )
                                   }
-                                  className="text-left px-4 py-3 rounded-2xl border border-indigo-100 bg-gradient-to-r from-slate-50 to-indigo-50/30 hover:from-indigo-500 hover:to-pink-500 hover:text-white text-xs font-bold text-slate-700 transition-all duration-200 shadow-sm hover:shadow-md hover:border-transparent active:scale-[0.98]"
+                                  className="text-left px-4 py-3 rounded-2xl border border-green-100 bg-gradient-to-r from-green-50 to-emerald-50/30 hover:from-green-500 hover:to-lime-500 hover:text-white text-xs font-bold text-slate-700 transition-all duration-200 shadow-sm hover:shadow-md hover:border-transparent active:scale-[0.98]"
                                 >
                                   {
                                     question
@@ -1963,7 +1963,7 @@ function App() {
                             >
                               <div className="max-w-[88%] sm:max-w-[78%]">
 
-                                <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white rounded-2xl rounded-br-none px-5 py-3.5 shadow-lg shadow-indigo-500/20">
+                                <div className="bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 text-white rounded-2xl rounded-br-none px-5 py-3.5 shadow-lg shadow-green-500/20">
                                   <p className="whitespace-pre-wrap leading-relaxed text-sm font-semibold">
                                     {
                                       msg.content
@@ -1993,13 +1993,13 @@ function App() {
                               className="flex justify-start gap-3"
                             >
 
-                              <div className="w-9 h-9 rounded-2xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center shrink-0 mt-0.5 shadow-lg shadow-indigo-500/25">
+                              <div className="w-9 h-9 rounded-2xl bg-gradient-to-tr from-green-500 via-emerald-500 to-teal-500 flex items-center justify-center shrink-0 mt-0.5 shadow-lg shadow-green-500/25">
                                 <IconSparkles className="w-5 h-5 text-white" />
                               </div>
 
                               <div className="max-w-[88%] sm:max-w-[80%]">
 
-                                <div className="bg-indigo-50/90 border-2 border-indigo-200/80 text-indigo-950 rounded-2xl rounded-bl-none px-5 py-4 shadow-sm">
+                                <div className="bg-green-50/90 border-2 border-green-200/80 text-green-950 rounded-2xl rounded-bl-none px-5 py-4 shadow-sm">
                                   <p className="whitespace-pre-wrap leading-relaxed text-[15px] font-bold">
                                     {
                                       msg.content
@@ -2007,7 +2007,7 @@ function App() {
                                   </p>
                                 </div>
 
-                                <p className="text-[10px] font-bold text-indigo-600 mt-1.5 ml-1 uppercase tracking-wider">
+                                <p className="text-[10px] font-bold text-green-600 mt-1.5 ml-1 uppercase tracking-wider">
                                   MindLog AI
                                 </p>
                               </div>
@@ -2023,14 +2023,14 @@ function App() {
                   {showTypingIndicator && (
                     <div className="flex justify-start gap-3">
 
-                      <div className="w-9 h-9 rounded-2xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center shrink-0 shadow-lg shadow-indigo-500/25">
+                      <div className="w-9 h-9 rounded-2xl bg-gradient-to-tr from-green-500 via-emerald-500 to-teal-500 flex items-center justify-center shrink-0 shadow-lg shadow-green-500/25">
                         <IconSparkles className="w-5 h-5 text-white" />
                       </div>
 
-                      <div className="flex items-center gap-2 bg-indigo-50/90 border-2 border-indigo-200/80 rounded-2xl rounded-bl-none px-5 py-4 shadow-sm">
-                        <span className="w-2 h-2 rounded-full bg-indigo-600 animate-bounce" />
-                        <span className="w-2 h-2 rounded-full bg-purple-600 animate-bounce [animation-delay:150ms]" />
-                        <span className="w-2 h-2 rounded-full bg-pink-600 animate-bounce [animation-delay:300ms]" />
+                      <div className="flex items-center gap-2 bg-green-50/90 border-2 border-green-200/80 rounded-2xl rounded-bl-none px-5 py-4 shadow-sm">
+                        <span className="w-2 h-2 rounded-full bg-green-600 animate-bounce" />
+                        <span className="w-2 h-2 rounded-full bg-emerald-600 animate-bounce [animation-delay:150ms]" />
+                        <span className="w-2 h-2 rounded-full bg-teal-600 animate-bounce [animation-delay:300ms]" />
                       </div>
                     </div>
                   )}
@@ -2039,7 +2039,7 @@ function App() {
                 </div>
 
                 {/* CHAT INPUT */}
-                <div className="border-t border-indigo-100 p-3.5 sm:p-4 bg-slate-50/80 shrink-0">
+                <div className="border-t border-green-100 p-3.5 sm:p-4 bg-green-50/80 shrink-0">
 
                   {hasMessages && (
                     <div className="flex gap-2 overflow-x-auto pb-2.5 mb-1.5 scrollbar-none">
@@ -2054,7 +2054,7 @@ function App() {
                                 question
                               )
                             }
-                            className="shrink-0 px-3.5 py-1.5 rounded-xl bg-white border border-indigo-100 text-xs font-bold text-slate-600 hover:text-indigo-600 hover:border-indigo-300 transition-all shadow-sm"
+                            className="shrink-0 px-3.5 py-1.5 rounded-xl bg-white border border-green-100 text-xs font-bold text-slate-600 hover:text-green-600 hover:border-green-300 transition-all shadow-sm"
                           >
                             {
                               question
@@ -2066,7 +2066,7 @@ function App() {
                   )}
 
                   {/* CHATBOX */}
-                  <div className="relative flex items-end gap-2 rounded-2xl px-2 py-2 border-2 border-indigo-100 bg-white shadow-lg shadow-indigo-500/5 focus-within:border-indigo-500 focus-within:ring-4 focus-within:ring-indigo-500/10 transition-all">
+                  <div className="relative flex items-end gap-2 rounded-2xl px-2 py-2 border-2 border-green-100 bg-white shadow-lg shadow-green-500/5 focus-within:border-green-500 focus-within:ring-4 focus-within:ring-green-500/10 transition-all">
 
                     <textarea
                       ref={
@@ -2102,7 +2102,7 @@ function App() {
                             input
                           )
                         }
-                        className="bg-slate-100 border border-slate-200 shadow-sm hover:bg-slate-200 text-indigo-600"
+                        className="bg-green-100 border border-green-200 shadow-sm hover:bg-green-200 text-green-600"
                       />
                     </div>
 
@@ -2115,7 +2115,7 @@ function App() {
                         isAsking ||
                         !input.trim()
                       }
-                      className="absolute right-2 bottom-2 shrink-0 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white w-10 h-10 flex items-center justify-center rounded-xl disabled:opacity-30 hover:opacity-90 transition-all active:scale-95 shadow-md shadow-indigo-500/30"
+                      className="absolute right-2 bottom-2 shrink-0 bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 text-white w-10 h-10 flex items-center justify-center rounded-xl disabled:opacity-30 hover:opacity-90 transition-all active:scale-95 shadow-md shadow-green-500/30"
                       title="Ask MindLog"
                       aria-label="Send question"
                     >
@@ -2131,7 +2131,7 @@ function App() {
                   )}
 
                   <div className="flex items-center justify-center gap-1.5 text-[11px] font-semibold text-slate-400 mt-2.5">
-                    <IconSparkles className="w-3.5 h-3.5 text-indigo-500" />
+                    <IconSparkles className="w-3.5 h-3.5 text-green-500" />
 
                     <span>
                       Answers are based on your own journal entries
