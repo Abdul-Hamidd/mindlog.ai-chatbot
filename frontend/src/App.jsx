@@ -1999,8 +1999,8 @@ function App() {
 
                               <div className="max-w-[88%] sm:max-w-[80%]">
 
-                                <div className="bg-green-50/90 border-2 border-green-200/80 text-green-950 rounded-2xl rounded-bl-none px-5 py-4 shadow-sm">
-                                  <p className="whitespace-pre-wrap leading-relaxed text-[15px] font-bold">
+                                <div className="bg-gradient-to-r from-teal-600 via-emerald-600 to-green-600 text-white rounded-2xl rounded-bl-none px-5 py-3.5 shadow-lg shadow-green-500/20">
+                                  <p className="whitespace-pre-wrap leading-relaxed text-sm font-semibold">
                                     {
                                       msg.content
                                     }
