@@ -1,6 +1,6 @@
-# 📓 MindLog: AI-Powered Journaling Companion with Grounded RAG Reflection
+# 📓 mindlog.ai: AI-Powered Journaling Companion with Grounded RAG Reflection
 
-MindLog is a **retrieval-augmented journaling application** that lets users write or speak their thoughts, tag their mood, and later ask natural-language questions about their own journal history. Every answer is generated through a hybrid retrieval pipeline and validated with automated evaluation scores, ensuring responses stay strictly grounded in the user's own words — nothing fabricated, nothing generic.
+mindlog.ai is a **retrieval-augmented journaling application** that lets users write or speak their thoughts, tag their mood, and later ask natural-language questions about their own journal history. Every answer is generated through a hybrid retrieval pipeline and validated with automated evaluation scores, ensuring responses stay strictly grounded in the user's own words — nothing fabricated, nothing generic.
 
 ---
 
